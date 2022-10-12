@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(226, 209, 189);
+}
+a:hover {
+    color: black !important;
+    background-color: white !important;
+}
+#font {
+    font-family: Brush Script MT;
+    font-size:x-large;
+}
+#picid{
+    height: 300px !important;
+}
+#heading1{
+    color:rgba(9, 18, 155, 0.801);
+    text-align: center;
+}
+#footer{
+    background-color: white;
+    max-width:1800px !important; 
+}
+#cards{
+    width: 80%;
+    max-width: 540px;
+}
+#card-po{
+    margin-left: 10%;
+    margin-right: 0%;
+}
+#cardpic{
+    height: 200px;
+    width: auto;
+}
+#welcomeh1{
+    text-align: center;
+    color: white;
+    background-color: rgb(26, 22, 22);
+    margin-bottom: 0px;
+    font-family: "Times New Roman";
+}

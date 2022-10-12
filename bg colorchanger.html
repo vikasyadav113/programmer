@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background Changer</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 10px 50px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width: 99.25%;
+            height: 400px;
+        }
+        p{
+            font-size: 20px;
+            text-indent: 60px;
+            text-align: justify;
+        }
+        .btn{
+            height: 20px;
+            width: 20px;
+            display:inline-block;
+            border-radius: 40%;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+        #colorchanger{
+            text-align: right;
+        }
+        #white{
+                background-color: white;
+        }
+        #aqua{
+            background-color: aqua;
+        }
+        #violet{
+            background-color: violet;
+        }
+        #black{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="colorchanger">
+        <span class="btn" id="white" onclick="changeBG('white')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('aqua')"></span>
+        <span class="btn" id="violet" onclick="changeBG('violet')"></span>
+        <span class="btn" id="black" onclick="changeBG('black')"></span>
+    </div>
+    <h1 class="text">About Us:</h1>
+    <img src="pex340152.jpg" alt="about us">
+    <p class="text"> I HAVE READ THE NOTICE OF THE EXAMINATION AND ACCEPT ALL THE TERMS & CONDITIONS OF
+        THE NOTICE OF THE EXAMINATION.
+         I HEREBY DECLARE THAT ALL STATEMENTS MADE IN THIS APPLICATION ARE TRUE, COMPLETE
+        AND CORRECT TO THE BEST OF MY KNOWLEDGE AND BELIEF. I UNDERSTAND THAT IN THE EVENT OF
+        ANY INFORMATION BEING FOUND SUPPRESSED/FALSE OR INCORRECT OR INELIGIBILITY BEING
+        DETECTED BEFORE OR AFTER THE EXAMINATION, MY CANDIDATURE/ APPOINTMENT IS LIABLE TO BE
+        CANCELLED.I AM WILLING TO SERVE ANYWHERE IN INDIA  I HAVE READ THE NOTICE OF 
+        THE EXAMINATION AND ACCEPT ALL THE TERMS & CONDITIONS OF
+        THE NOTICE OF THE EXAMINATION.
+         I HEREBY DECLARE THAT ALL STATEMENTS MADE IN THIS APPLICATION ARE TRUE, COMPLETE
+        AND CORRECT TO THE BEST OF MY KNOWLEDGE AND BELIEF. I UNDERSTAND THAT IN THE EVENT OF
+        ANY INFORMATION BEING FOUND SUPPRESSED/FALSE OR INCORRECT OR INELIGIBILITY BEING
+        DETECTED BEFORE OR AFTER THE EXAMINATION, MY CANDIDATURE/ APPOINTMENT IS LIABLE TO BE
+        CANCELLED.I AM WILLING TO SERVE ANYWHERE IN INDIA.
+    </p>
+    <script>
+        function changeBG(color){
+            document.body.style.backgroundColor = color;
+            let txt = document.getElementsByClassName('text');
+            if(color == "black"){
+                for(let elm of txt){
+                    elm.style.color="white";
+                }
+            }else{
+                for(let elm of txt){
+                    elm.style.color = "black";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
